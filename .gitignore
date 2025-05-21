@@ -1,0 +1,24 @@
+# Flutter
+/client/.dart_tool/
+/client/.packages
+/client/.flutter-plugins
+/client/.flutter-plugins-dependencies
+/client/.metadata
+/client/build/
+/client/ios/
+/client/android/
+/client/linux/
+/client/macos/
+/client/windows/
+
+# Node.js
+/server/node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# System
+.DS_Store
+Thumbs.db
