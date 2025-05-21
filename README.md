@@ -106,6 +106,9 @@ A: 使用Flutter for Web，注意避免使用不支持的插件
 # 初始化本地仓库(如果未初始化)
 git init
 
+- 检查.git目录 在项目根目录下查看是否存在 .git 隐藏文件夹，这是Git仓库的标志。
+- 使用git status命令，如果显示"fatal: not a git repository"则表示未初始化，如果显示文件状态则表示已初始化。
+
 # 添加所有文件到暂存区
 git add .
 
@@ -113,7 +116,14 @@ git add .
 git commit -m "Initial commit"
 
 # 添加远程仓库(替换YOUR_USERNAME)
-git remote add origin https://github.com/YOUR_USERNAME/sun-project1.git
+git remote add origin https://github.com/ihimalayas/sun-project1.git
+
+➜  sun-project1 git:(main) git remote add origin https://github.com/ihimalayas/sun-project1.git
+error: remote origin already exists.
+首先需要移除现有的origin远程配置，以便重新添加正确的远程仓库URL。
+git remote remove origin
+现在需要添加正确的远程仓库URL。
+git remote add origin https://github.com/ihimalayas/sun-project1.git
 
 # 推送代码到GitHub
 git push -u origin main
